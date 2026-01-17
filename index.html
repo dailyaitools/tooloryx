@@ -16,96 +16,76 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
-    background:#f5f7fa;
+    background:#f4f6fb;
     color:#222;
 }
 
 /* HEADER */
 header{
-    background:linear-gradient(135deg,#111,#333);
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
     color:#fff;
-    padding:40px 20px;
+    padding:30px 15px;
     text-align:center;
 }
 
-header h1{
-    font-size:32px;
-    margin-bottom:8px;
-}
-
-header p{
-    font-size:14px;
-    opacity:0.9;
-}
-
-/* GRID */
+/* MAIN */
 .container{
-    max-width:1200px;
-    margin:40px auto;
-    padding:0 20px;
-}
-
-.tools{
+    max-width:1100px;
+    margin:30px auto;
+    padding:0 15px;
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
 }
 
-/* CARD */
-.card{
+/* TOOL CARD */
+.tool{
     background:#fff;
-    border-radius:14px;
-    overflow:hidden;
-    box-shadow:0 8px 20px rgba(0,0,0,0.12);
-    transition:transform 0.25s ease;
+    border-radius:12px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 6px 18px rgba(0,0,0,0.08);
+    transition:0.3s;
 }
 
-.card:hover{
-    transform:translateY(-5px);
+.tool:hover{
+    transform:translateY(-6px);
 }
 
-.card img{
-    width:100%;
-    height:160px;
-    object-fit:cover;
+.tool img{
+    width:70px;
+    height:70px;
+    object-fit:contain;
+    margin-bottom:15px;
 }
 
-.card-content{
-    padding:18px;
+.tool h3{
+    font-size:16px;
+    margin-bottom:10px;
 }
 
-.card-content h3{
-    font-size:18px;
-    margin-bottom:6px;
-}
-
-.card-content p{
-    font-size:14px;
-    color:#555;
-    margin-bottom:12px;
-}
-
-.card-content a{
+.tool a{
     display:inline-block;
-    padding:8px 16px;
-    background:#111;
-    color:#fff;
     text-decoration:none;
-    border-radius:6px;
+    background:#2c5364;
+    color:#fff;
+    padding:8px 14px;
+    border-radius:20px;
     font-size:14px;
 }
 
 /* FOOTER */
 footer{
-    background:#111;
-    color:#aaa;
+    margin-top:40px;
+    background:#0f2027;
+    color:#bbb;
     text-align:center;
-    padding:20px;
-    font-size:13px;
+    padding:15px;
+    font-size:14px;
 }
 </style>
 </head>
@@ -113,118 +93,75 @@ footer{
 <body>
 
 <header>
-    <h1>🤖 Daily AI Tools</h1>
-    <p>Best Free AI Tools</p>
+    <h1>Daily AI Tools</h1>
 </header>
 
 <div class="container">
-<div class="tools">
 
-<!-- TOOL 1 -->
-<div class="card">
-<img src="https://source.unsplash.com/400x250/?ai,robot" loading="lazy">
-<div class="card-content">
-<h3>ChatGPT</h3>
-<p>AI chatbot for writing, coding and learning.</p>
-<a href="https://chat.openai.com" target="_blank">Use Tool</a>
-</div>
-</div>
+    <div class="tool">
+        <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png">
+        <h3>Chat AI</h3>
+        <a href="#">Open</a>
+    </div>
 
-<!-- TOOL 2 -->
-<div class="card">
-<img src="https://source.unsplash.com/400x250/?design,technology" loading="lazy">
-<div class="card-content">
-<h3>Canva AI</h3>
-<p>Create designs, posts and presentations.</p>
-<a href="https://www.canva.com" target="_blank">Use Tool</a>
-</div>
-</div>
+    <div class="tool">
+        <img src="https://cdn-icons-png.flaticon.com/512/2920/2920277.png">
+        <h3>Image Generator</h3>
+        <a href="#">Open</a>
+    </div>
 
-<!-- TOOL 3 -->
-<div class="card">
-<img src="https://source.unsplash.com/400x250/?writing,workspace" loading="lazy">
-<div class="card-content">
-<h3>Grammarly</h3>
-<p>Improve grammar and writing quality.</p>
-<a href="https://www.grammarly.com" target="_blank">Use Tool</a>
-</div>
-</div>
+    <div class="tool">
+        <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png">
+        <h3>Text to Speech</h3>
+        <a href="#">Open</a>
+    </div>
 
-<!-- TOOL 4 -->
-<div class="card">
-<img src="https://source.unsplash.com/400x250/?photo,editing" loading="lazy">
-<div class="card-content">
-<h3>Remove.bg</h3>
-<p>Remove image background automatically.</p>
-<a href="https://www.remove.bg" target="_blank">Use Tool</a>
-</div>
-</div>
+    <div class="tool">
+        <img src="https://cdn-icons-png.flaticon.com/512/1034/1034150.png">
+        <h3>Speech to Text</h3>
+        <a href="#">Open</a>
+    </div>
 
-<!-- TOOL 5 -->
-<div class="card">
-<img src="https://source.unsplash.com/400x250/?marketing,copywriting" loading="lazy">
-<div class="card-content">
-<h3>Copy.ai</h3>
-<p>AI copywriting for ads and blogs.</p>
-<a href="https://www.copy.ai" target="_blank">Use Tool</a>
-</div>
-</div>
+    <div class="tool">
+        <img src="https://cdn-icons-png.flaticon.com/512/1006/1006771.png">
+        <h3>AI Writer</h3>
+        <a href="#">Open</a>
+    </div>
 
-<!-- TOOL 6 -->
-<div class="card">
-<img src="https://source.unsplash.com/400x250/?laptop,writing" loading="lazy">
-<div class="card-content">
-<h3>QuillBot</h3>
-<p>Rewrite and paraphrase content.</p>
-<a href="https://quillbot.com" target="_blank">Use Tool</a>
-</div>
-</div>
+    <div class="tool">
+        <img src="https://cdn-icons-png.flaticon.com/512/1829/1829586.png">
+        <h3>AI Translator</h3>
+        <a href="#">Open</a>
+    </div>
 
-<!-- TOOL 7 -->
-<div class="card">
-<img src="https://source.unsplash.com/400x250/?video,editing" loading="lazy">
-<div class="card-content">
-<h3>Pictory</h3>
-<p>Convert text into AI videos.</p>
-<a href="https://pictory.ai" target="_blank">Use Tool</a>
-</div>
-</div>
+    <div class="tool">
+        <img src="https://cdn-icons-png.flaticon.com/512/919/919836.png">
+        <h3>Code Assistant</h3>
+        <a href="#">Open</a>
+    </div>
 
-<!-- TOOL 8 -->
-<div class="card">
-<img src="https://source.unsplash.com/400x250/?artificial,intelligence" loading="lazy">
-<div class="card-content">
-<h3>Leonardo AI</h3>
-<p>Create stunning AI artwork.</p>
-<a href="https://leonardo.ai" target="_blank">Use Tool</a>
-</div>
-</div>
+    <div class="tool">
+        <img src="https://cdn-icons-png.flaticon.com/512/3595/3595455.png">
+        <h3>AI Resume</h3>
+        <a href="#">Open</a>
+    </div>
 
-<!-- TOOL 9 -->
-<div class="card">
-<img src="https://source.unsplash.com/400x250/?voice,studio" loading="lazy">
-<div class="card-content">
-<h3>Murf AI</h3>
-<p>AI voice and text-to-speech.</p>
-<a href="https://murf.ai" target="_blank">Use Tool</a>
-</div>
-</div>
+    <div class="tool">
+        <img src="https://cdn-icons-png.flaticon.com/512/4320/4320337.png">
+        <h3>AI Video</h3>
+        <a href="#">Open</a>
+    </div>
 
-<!-- TOOL 10 -->
-<div class="card">
-<img src="https://source.unsplash.com/400x250/?code,programming" loading="lazy">
-<div class="card-content">
-<h3>Durable AI</h3>
-<p>Generate websites using AI.</p>
-<a href="https://durable.co" target="_blank">Use Tool</a>
-</div>
-</div>
+    <div class="tool">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+        <h3>AI Voice</h3>
+        <a href="#">Open</a>
+    </div>
 
-</div>
 </div>
 
 <footer>
-© 2026 Daily AI Tools
+    © Daily AI Tools
 </footer>
 
 </body>
