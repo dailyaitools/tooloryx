@@ -2,75 +2,102 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Daily AI Tools – Free AI Tools Hub</title>
-<meta name="description" content=<p>Discover the best AI tools for productivity, design & growth</p>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily AI Tools</title>
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 body{
-  font-family:Segoe UI,Arial,sans-serif;
-  background:#f4f6f8;
-  color:#222;
+    background:#f5f7fa;
+    color:#333;
 }
+
+/* HEADER */
 header{
-  background:linear-gradient(135deg,#111,#333);
-  color:#fff;
-  padding:45px 20px;
-  text-align:center;
+    background:linear-gradient(135deg,#111,#333);
+    color:#fff;
+    padding:40px 20px;
+    text-align:center;
 }
-header h1{font-size:36px;margin-bottom:10px}
-header p{opacity:.9}
 
+header h1{
+    font-size:36px;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:16px;
+    opacity:0.9;
+}
+
+/* MAIN */
 .container{
-  max-width:1150px;
-  margin:auto;
-  padding:40px 20px;
+    max-width:1200px;
+    margin:40px auto;
+    padding:0 20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
 }
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:22px;
-}
-.card{
-  background:#fff;
-  border-radius:16px;
-  overflow:hidden;
-  box-shadow:0 10px 30px rgba(0,0,0,.08);
-  transition:.3s;
-}
-.card:hover{transform:translateY(-6px)}
-.card img{
-  width:100%;
-  height:160px;
-  object-fit:cover;
-}
-.card-content{
-  padding:18px;
-}
-.card h3{margin-bottom:8px}
-.card p{
-  font-size:14px;
-  color:#555;
-  margin-bottom:14px;
-}
-.card a{
-  display:inline-block;
-  padding:10px 18px;
-  background:#111;
-  color:#fff;
-  border-radius:8px;
-  text-decoration:none;
-  font-size:14px;
-}
-.card a:hover{background:#000}
 
+/* TOOL CARD */
+.card{
+    background:#fff;
+    border-radius:14px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    transition:transform 0.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+}
+
+.card img{
+    width:100%;
+    height:160px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:18px;
+}
+
+.card-content h3{
+    margin-bottom:8px;
+    font-size:18px;
+}
+
+.card-content p{
+    font-size:14px;
+    color:#555;
+    margin-bottom:15px;
+}
+
+.card-content a{
+    display:inline-block;
+    background:#000;
+    color:#fff;
+    padding:10px 18px;
+    border-radius:8px;
+    text-decoration:none;
+    font-size:14px;
+}
+
+/* FOOTER */
 footer{
-  text-align:center;
-  padding:25px;
-  background:#fff;
-  color:#666;
-  font-size:14px;
+    background:#111;
+    color:#ccc;
+    text-align:center;
+    padding:18px;
+    margin-top:50px;
+    font-size:14px;
 }
 </style>
 </head>
@@ -78,108 +105,88 @@ footer{
 <body>
 
 <header>
-  <h1>🤖 Daily AI Tools</h1>
-  <p>Best Free AI Tools – With Images</p>
+    <h1>🤖 Daily AI Tools</h1>
+    <p>Best Free AI Tools – Updated Daily</p>
 </header>
 
 <div class="container">
-  <div class="grid">
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995" alt="ChatGPT">
-      <div class="card-content">
-        <h3>ChatGPT</h3>
-        <p>AI chatbot for writing, coding and learning.</p>
-        <a href="https://chat.openai.com" target="_blank">Use Tool</a>
-      </div>
-    </div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1677442136019-21780ecad995">
+<div class="card-content">
+<h3>ChatGPT</h3>
+<p>AI chatbot for writing, coding and learning.</p>
+<a href="https://chat.openai.com" target="_blank">Use Tool</a>
+</div>
+</div>
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113" alt="Canva">
-      <div class="card-content">
-        <h3>Canva AI</h3>
-        <p>Create designs, posts and presentations.</p>
-        <a href="https://www.canva.com" target="_blank">Use Tool</a>
-      </div>
-    </div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7">
+<div class="card-content">
+<h3>Canva AI</h3>
+<p>Create designs, posts and presentations.</p>
+<a href="https://www.canva.com" target="_blank">Use Tool</a>
+</div>
+</div>
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1581091870627-3a2c1c1f1b14" alt="Grammarly">
-      <div class="card-content">
-        <h3>Grammarly</h3>
-        <p>Improve grammar and writing quality.</p>
-        <a href="https://www.grammarly.com" target="_blank">Use Tool</a>
-      </div>
-    </div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1581090700227-1e37b190418e">
+<div class="card-content">
+<h3>Grammarly</h3>
+<p>Improve grammar and writing quality.</p>
+<a href="https://www.grammarly.com" target="_blank">Use Tool</a>
+</div>
+</div>
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0" alt="Remove bg">
-      <div class="card-content">
-        <h3>Remove.bg</h3>
-        <p>Remove image background automatically.</p>
-        <a href="https://www.remove.bg" target="_blank">Use Tool</a>
-      </div>
-    </div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1545235617-9465d2a55698">
+<div class="card-content">
+<h3>Remove.bg</h3>
+<p>Remove image background automatically.</p>
+<a href="https://www.remove.bg" target="_blank">Use Tool</a>
+</div>
+</div>
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d" alt="Copy AI">
-      <div class="card-content">
-        <h3>Copy.ai</h3>
-        <p>AI copywriting for ads & blogs.</p>
-        <a href="https://www.copy.ai" target="_blank">Use Tool</a>
-      </div>
-    </div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1618336753974-aae8e04506aa">
+<div class="card-content">
+<h3>Copy.ai</h3>
+<p>AI copywriting for ads & blogs.</p>
+<a href="https://www.copy.ai" target="_blank">Use Tool</a>
+</div>
+</div>
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7" alt="QuillBot">
-      <div class="card-content">
-        <h3>QuillBot</h3>
-        <p>Rewrite and paraphrase content.</p>
-        <a href="https://quillbot.com" target="_blank">Use Tool</a>
-      </div>
-    </div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1526378722484-bd91ca387e72">
+<div class="card-content">
+<h3>QuillBot</h3>
+<p>Rewrite and paraphrase content.</p>
+<a href="https://quillbot.com" target="_blank">Use Tool</a>
+</div>
+</div>
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1614850523459-c2f4c699c52e" alt="Pictory">
-      <div class="card-content">
-        <h3>Pictory</h3>
-        <p>Convert text into AI videos.</p>
-        <a href="https://pictory.ai" target="_blank">Use Tool</a>
-      </div>
-    </div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1617791160536-598cf32026fb">
+<div class="card-content">
+<h3>Pictory</h3>
+<p>Convert text into AI videos.</p>
+<a href="https://pictory.ai" target="_blank">Use Tool</a>
+</div>
+</div>
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Leonardo AI">
-      <div class="card-content">
-        <h3>Leonardo AI</h3>
-        <p>Create stunning AI artwork.</p>
-        <a href="https://leonardo.ai" target="_blank">Use Tool</a>
-      </div>
-    </div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1639322537228-f710d846310a">
+<div class="card-content">
+<h3>Leonardo AI</h3>
+<p>Create stunning AI artwork.</p>
+<a href="https://leonardo.ai" target="_blank">Use Tool</a>
+</div>
+</div>
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d" alt="Durable AI">
-      <div class="card-content">
-        <h3>Durable AI</h3>
-        <p>Create websites using AI.</p>
-        <a href="https://durable.co" target="_blank">Use Tool</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1589254065909-b7086229d08c" alt="ElevenLabs">
-      <div class="card-content">
-        <h3>ElevenLabs</h3>
-        <p>AI voice & text-to-speech.</p>
-        <a href="https://elevenlabs.io" target="_blank">Use Tool</a>
-      </div>
-    </div>
-
-  </div>
 </div>
 
 <footer>
-  © 2026 Daily AI Tools • Built with GitHub Pages
+© 2026 Daily AI Tools. All rights reserved.
 </footer>
 
 </body>
