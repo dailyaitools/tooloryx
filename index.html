@@ -5,124 +5,120 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Daily AI Tools</title>
 
-<meta name="description" content="Daily AI Tools – Free AI tools for writing, images, video, coding and productivity.">
-<meta name="robots" content="index, follow">
+<!-- SEO -->
+<meta name="description" content="Daily AI Tools – Best free AI tools in one place">
+<meta name="keywords" content="AI tools, free AI tools, ChatGPT, Canva AI">
+<meta name="author" content="Daily AI Tools">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Inter',sans-serif;
 }
+
 body{
-    background:#f3f5f7;
-    color:#222;
+  background:#f5f7fb;
+  color:#111;
 }
 
 /* HEADER */
 header{
-    background:linear-gradient(135deg,#0f172a,#1e293b);
-    color:#fff;
-    padding:22px 16px;
-}
-.header-wrap{
-    max-width:1200px;
-    margin:auto;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    flex-wrap:wrap;
-    gap:15px;
-}
-.logo{
-    font-size:22px;
-    font-weight:700;
-    display:flex;
-    align-items:center;
-    gap:8px;
-}
-.logo span{
-    font-size:24px;
-}
-.search-box{
-    flex:1;
-    max-width:380px;
-}
-.search-box input{
-    width:100%;
-    padding:10px 14px;
-    border:none;
-    border-radius:25px;
-    outline:none;
-    font-size:14px;
+  background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+  padding:35px 20px;
+  text-align:center;
+  color:#fff;
 }
 
-/* GRID */
+header h1{
+  font-size:34px;
+  font-weight:700;
+}
+
+header p{
+  opacity:.9;
+  margin-top:6px;
+}
+
+/* SEARCH */
+.search-box{
+  max-width:420px;
+  margin:25px auto 0;
+}
+
+.search-box input{
+  width:100%;
+  padding:14px 18px;
+  border-radius:30px;
+  border:none;
+  outline:none;
+  font-size:15px;
+}
+
+/* TOOLS GRID */
 .container{
-    max-width:1200px;
-    margin:35px auto;
-    padding:0 14px;
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:22px;
+  max-width:1200px;
+  margin:40px auto;
+  padding:0 20px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:22px;
 }
+
+/* TOOL CARD */
 .tool{
-    background:#fff;
-    border-radius:14px;
-    box-shadow:0 6px 18px rgba(0,0,0,.08);
-    overflow:hidden;
-    transition:.25s;
+  background:#fff;
+  border-radius:14px;
+  padding:22px;
+  box-shadow:0 8px 20px rgba(0,0,0,.06);
+  transition:.3s;
 }
+
 .tool:hover{
-    transform:translateY(-4px);
+  transform:translateY(-5px);
 }
+
 .tool img{
-    width:100%;
-    height:140px;
-    object-fit:cover;
+  height:80px;
+  width:100%;
+  object-fit:contain;
+  margin-bottom:18px;
 }
-.tool .box{
-    padding:14px;
-}
+
 .tool h3{
-    font-size:16px;
-    margin-bottom:6px;
+  font-size:18px;
+  margin-bottom:6px;
 }
+
 .tool p{
-    font-size:13px;
-    color:#555;
-    margin-bottom:10px;
+  font-size:14px;
+  color:#555;
+  min-height:38px;
 }
+
 .tool a{
-    display:inline-block;
-    background:#0f172a;
-    color:#fff;
-    text-decoration:none;
-    padding:7px 14px;
-    border-radius:20px;
-    font-size:12px;
+  display:inline-block;
+  margin-top:14px;
+  padding:9px 18px;
+  background:#000;
+  color:#fff;
+  border-radius:20px;
+  font-size:14px;
+  text-decoration:none;
 }
 
 /* FOOTER */
 footer{
-    background:#0f172a;
-    color:#aaa;
-    text-align:center;
-    padding:14px;
-    font-size:12px;
-}
-
-/* MOBILE */
-@media(max-width:600px){
-    .header-wrap{
-        flex-direction:column;
-        align-items:flex-start;
-    }
-    .search-box{
-        max-width:100%;
-        width:100%;
-    }
+  background:#111;
+  color:#aaa;
+  text-align:center;
+  padding:18px;
+  margin-top:40px;
+  font-size:14px;
 }
 </style>
 </head>
@@ -130,103 +126,89 @@ footer{
 <body>
 
 <header>
-    <div class="header-wrap">
-        <div class="logo"><span>🤖</span>Daily AI Tools</div>
-        <div class="search-box">
-            <input type="text" id="search" placeholder="Search AI tools..." onkeyup="searchTools()">
-        </div>
-    </div>
+  <h1>🤖 Daily AI Tools</h1>
+  <p>All useful AI tools in one place</p>
+
+  <div class="search-box">
+    <input type="text" id="search" placeholder="Search AI tools...">
+  </div>
 </header>
 
-<div class="container" id="toolList">
+<section class="container" id="tools">
 
-<div class="tool">
-<img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" loading="lazy">
-<div class="box">
-<h3>ChatGPT</h3>
-<p>AI chatbot for writing & coding.</p>
-<a href="https://chat.openai.com" target="_blank">Open</a>
-</div>
-</div>
+  <!-- TOOL -->
+  <div class="tool">
+    <img src="https://cdn.simpleicons.org/openai/000000" loading="lazy">
+    <h3>ChatGPT</h3>
+    <p>Chatbot for writing, coding and learning.</p>
+    <a href="https://chat.openai.com" target="_blank">Open</a>
+  </div>
 
-<div class="tool">
-<img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" loading="lazy">
-<div class="box">
-<h3>Canva AI</h3>
-<p>Design posts & presentations.</p>
-<a href="https://www.canva.com" target="_blank">Open</a>
-</div>
-</div>
+  <div class="tool">
+    <img src="https://cdn.simpleicons.org/canva/00C4CC" loading="lazy">
+    <h3>Canva AI</h3>
+    <p>Create designs, posts and presentations.</p>
+    <a href="https://www.canva.com" target="_blank">Open</a>
+  </div>
 
-<div class="tool">
-<img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" loading="lazy">
-<div class="box">
-<h3>Grammarly</h3>
-<p>Improve grammar & writing.</p>
-<a href="https://www.grammarly.com" target="_blank">Open</a>
-</div>
-</div>
+  <div class="tool">
+    <img src="https://cdn.simpleicons.org/grammarly/15C39A" loading="lazy">
+    <h3>Grammarly</h3>
+    <p>Improve grammar and writing quality.</p>
+    <a href="https://www.grammarly.com" target="_blank">Open</a>
+  </div>
 
-<div class="tool">
-<img src="https://cdn-icons-png.flaticon.com/512/919/919826.png" loading="lazy">
-<div class="box">
-<h3>Remove.bg</h3>
-<p>Remove image background.</p>
-<a href="https://www.remove.bg" target="_blank">Open</a>
-</div>
-</div>
+  <div class="tool">
+    <img src="https://cdn.simpleicons.org/removebg/000000" loading="lazy">
+    <h3>Remove.bg</h3>
+    <p>Remove image background automatically.</p>
+    <a href="https://www.remove.bg" target="_blank">Open</a>
+  </div>
 
-<div class="tool">
-<img src="https://cdn-icons-png.flaticon.com/512/5968/5968517.png" loading="lazy">
-<div class="box">
-<h3>Copy.ai</h3>
-<p>AI copywriting tool.</p>
-<a href="https://www.copy.ai" target="_blank">Open</a>
-</div>
-</div>
+  <div class="tool">
+    <img src="https://cdn.simpleicons.org/copydotai/000000" loading="lazy">
+    <h3>Copy.ai</h3>
+    <p>AI copywriting for ads and blogs.</p>
+    <a href="https://www.copy.ai" target="_blank">Open</a>
+  </div>
 
-<div class="tool">
-<img src="https://cdn-icons-png.flaticon.com/512/1048/1048943.png" loading="lazy">
-<div class="box">
-<h3>QuillBot</h3>
-<p>Rewrite & paraphrase text.</p>
-<a href="https://quillbot.com" target="_blank">Open</a>
-</div>
-</div>
+  <div class="tool">
+    <img src="https://cdn.simpleicons.org/quill/000000" loading="lazy">
+    <h3>QuillBot</h3>
+    <p>Rewrite and paraphrase content.</p>
+    <a href="https://quillbot.com" target="_blank">Open</a>
+  </div>
 
-<div class="tool">
-<img src="https://cdn-icons-png.flaticon.com/512/2721/2721291.png" loading="lazy">
-<div class="box">
-<h3>Pictory</h3>
-<p>Text to AI video.</p>
-<a href="https://pictory.ai" target="_blank">Open</a>
-</div>
-</div>
+  <div class="tool">
+    <img src="https://cdn.simpleicons.org/youtube/FF0000" loading="lazy">
+    <h3>Pictory</h3>
+    <p>Convert text into AI videos.</p>
+    <a href="https://pictory.ai" target="_blank">Open</a>
+  </div>
 
-<div class="tool">
-<img src="https://cdn-icons-png.flaticon.com/512/1087/1087840.png" loading="lazy">
-<div class="box">
-<h3>Leonardo AI</h3>
-<p>Create AI artwork.</p>
-<a href="https://leonardo.ai" target="_blank">Open</a>
-</div>
-</div>
+  <div class="tool">
+    <img src="https://cdn.simpleicons.org/adobe/FF0000" loading="lazy">
+    <h3>Leonardo AI</h3>
+    <p>Create stunning AI artwork.</p>
+    <a href="https://leonardo.ai" target="_blank">Open</a>
+  </div>
 
-</div>
+</section>
 
 <footer>
-© Daily AI Tools
+  © 2026 Daily AI Tools — All rights reserved
 </footer>
 
 <script>
-function searchTools(){
-    let input = document.getElementById("search").value.toLowerCase();
-    let tools = document.querySelectorAll(".tool");
-    tools.forEach(tool=>{
-        let name = tool.innerText.toLowerCase();
-        tool.style.display = name.includes(input) ? "block" : "none";
-    });
-}
+const search = document.getElementById("search");
+const tools = document.querySelectorAll(".tool");
+
+search.addEventListener("keyup",()=>{
+  let value = search.value.toLowerCase();
+  tools.forEach(tool=>{
+    tool.style.display = tool.innerText.toLowerCase().includes(value) ? "block" : "none";
+  });
+});
 </script>
 
 </body>
