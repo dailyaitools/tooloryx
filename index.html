@@ -1,74 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Daily AI Tools</title>
-  <meta name="description" content="Best free AI tools for students, creators and professionals">
+  <meta charset="UTF-8" />
+  <title>Daily AI Tools – Best Free AI Tools</title>
+  <meta name="description" content="Discover the best free AI tools for productivity, design, writing and learning. Updated daily.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      padding: 20px;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      min-height: 100vh;
+      padding: 40px 20px;
     }
-    h1 {
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    header {
       text-align: center;
-      color: #222;
+      margin-bottom: 50px;
     }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
     .card {
       background: #ffffff;
-      padding: 15px;
-      margin: 15px auto;
-      max-width: 600px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      color: #333;
+      border-radius: 14px;
+      padding: 25px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 25px 45px rgba(0,0,0,0.35);
+    }
+
+    .card h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 15px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      color: #555;
+    }
+
     .btn {
       display: inline-block;
-      margin-top: 10px;
-      background: #000;
+      padding: 12px 22px;
+      background: linear-gradient(135deg, #0072ff, #00c6ff);
       color: #fff;
-      padding: 8px 14px;
-      border-radius: 6px;
       text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: opacity 0.3s ease;
+    }
+
+    .btn:hover {
+      opacity: 0.85;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      font-size: 14px;
+      opacity: 0.8;
     }
   </style>
 </head>
 
 <body>
+  <div class="container">
 
-  <h1>🤖 Daily AI Tools</h1>
-  <p style="text-align:center;">Best Free AI Tools – Updated Daily</p>
+    <header>
+      <h1>🤖 Daily AI Tools</h1>
+      <p>Best Free AI Tools for Productivity, Design & Learning</p>
+    </header>
 
-  <div class="card">
-    <h3>ChatGPT</h3>
-    <p>AI chatbot for writing, coding and learning.</p>
-    <a class="btn" href="https://chat.openai.com" target="_blank">Use Tool</a>
+    <section class="grid">
+
+      <div class="card">
+        <h3>ChatGPT</h3>
+        <p>AI assistant for writing, coding, brainstorming and learning faster.</p>
+        <a class="btn" href="https://chat.openai.com" target="_blank">Visit Tool</a>
+      </div>
+
+      <div class="card">
+        <h3>Canva AI</h3>
+        <p>Create stunning designs, presentations and social media posts using AI.</p>
+        <a class="btn" href="https://www.canva.com" target="_blank">Visit Tool</a>
+      </div>
+
+      <div class="card">
+        <h3>Remove.bg</h3>
+        <p>Remove image backgrounds instantly with AI-powered technology.</p>
+        <a class="btn" href="https://www.remove.bg" target="_blank">Visit Tool</a>
+      </div>
+
+      <div class="card">
+        <h3>Grammarly</h3>
+        <p>Improve grammar, clarity and tone in your writing using AI.</p>
+        <a class="btn" href="https://www.grammarly.com" target="_blank">Visit Tool</a>
+      </div>
+
+    </section>
+
+    <footer>
+      © 2026 Daily AI Tools • Built with ❤️ using GitHub Pages
+    </footer>
+
   </div>
-
-  <div class="card">
-    <h3>Canva AI</h3>
-    <p>Create designs, presentations & images using AI.</p>
-    <a class="btn" href="https://www.canva.com" target="_blank">Use Tool</a>
-  </div>
-
-  <div class="card">
-    <h3>Remove.bg</h3>
-    <p>Remove image background instantly.</p>
-    <a class="btn" href="https://www.remove.bg" target="_blank">Use Tool</a>
-  </div>
-
-  <div class="card">
-    <h3>Grammarly</h3>
-    <p>AI writing assistant for error-free English.</p>
-    <a class="btn" href="https://www.grammarly.com" target="_blank">Use Tool</a>
-  </div>
-
-  <p style="text-align:center;margin-top:30px;">
-    © 2026 Daily AI Tools
-  </p>
-
 </body>
 </html>
- 
