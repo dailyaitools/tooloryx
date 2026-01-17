@@ -1,167 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily AI Tools</title>
 
-<!-- CACHE FIX -->
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<meta http-equiv="Pragma" content="no-cache">
-<meta http-equiv="Expires" content="0">
+    <!-- CACHE FIX -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
 
-<title>Daily AI Tools</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
+        body{
+            background:#f4f6f8;
+            color:#222;
+        }
 
-body{
-    background:#f4f6fb;
-    color:#222;
-}
+        header{
+            background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+            color:#fff;
+            padding:35px 20px;
+            text-align:center;
+        }
 
-/* HEADER */
-header{
-    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
-    color:#fff;
-    padding:30px 15px;
-    text-align:center;
-}
+        header h1{
+            font-size:32px;
+            margin-bottom:8px;
+        }
 
-/* MAIN */
-.container{
-    max-width:1100px;
-    margin:30px auto;
-    padding:0 15px;
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
-}
+        header p{
+            font-size:14px;
+            opacity:0.9;
+        }
 
-/* TOOL CARD */
-.tool{
-    background:#fff;
-    border-radius:12px;
-    padding:20px;
-    text-align:center;
-    box-shadow:0 6px 18px rgba(0,0,0,0.08);
-    transition:0.3s;
-}
+        .container{
+            max-width:1200px;
+            margin:40px auto;
+            padding:0 15px;
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:25px;
+        }
 
-.tool:hover{
-    transform:translateY(-6px);
-}
+        .tool{
+            background:#fff;
+            border-radius:14px;
+            overflow:hidden;
+            box-shadow:0 8px 20px rgba(0,0,0,0.08);
+            transition:0.3s;
+        }
 
-.tool img{
-    width:70px;
-    height:70px;
-    object-fit:contain;
-    margin-bottom:15px;
-}
+        .tool:hover{
+            transform:translateY(-6px);
+        }
 
-.tool h3{
-    font-size:16px;
-    margin-bottom:10px;
-}
+        .tool img{
+            width:100%;
+            height:160px;
+            object-fit:cover;
+        }
 
-.tool a{
-    display:inline-block;
-    text-decoration:none;
-    background:#2c5364;
-    color:#fff;
-    padding:8px 14px;
-    border-radius:20px;
-    font-size:14px;
-}
+        .tool .content{
+            padding:18px;
+        }
 
-/* FOOTER */
-footer{
-    margin-top:40px;
-    background:#0f2027;
-    color:#bbb;
-    text-align:center;
-    padding:15px;
-    font-size:14px;
-}
-</style>
+        .tool h3{
+            font-size:18px;
+            margin-bottom:8px;
+        }
+
+        .tool p{
+            font-size:14px;
+            color:#555;
+            margin-bottom:15px;
+        }
+
+        .tool a{
+            display:inline-block;
+            text-decoration:none;
+            background:#000;
+            color:#fff;
+            padding:8px 16px;
+            border-radius:20px;
+            font-size:13px;
+        }
+
+        footer{
+            margin-top:60px;
+            background:#111;
+            color:#aaa;
+            text-align:center;
+            padding:18px;
+            font-size:13px;
+        }
+    </style>
 </head>
-
 <body>
 
 <header>
-    <h1>Daily AI Tools</h1>
+    <h1>🤖 Daily AI Tools</h1>
+    <p>Best useful AI tools in one place</p>
 </header>
 
 <div class="container">
 
     <div class="tool">
-        <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png">
-        <h3>Chat AI</h3>
-        <a href="#">Open</a>
+        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995">
+        <div class="content">
+            <h3>ChatGPT</h3>
+            <p>AI chatbot for writing, coding and learning.</p>
+            <a href="https://chat.openai.com" target="_blank">Open</a>
+        </div>
     </div>
 
     <div class="tool">
-        <img src="https://cdn-icons-png.flaticon.com/512/2920/2920277.png">
-        <h3>Image Generator</h3>
-        <a href="#">Open</a>
+        <img src="https://images.unsplash.com/photo-1611162616475-46b635cb6868">
+        <div class="content">
+            <h3>Canva AI</h3>
+            <p>Create designs, posts and presentations.</p>
+            <a href="https://www.canva.com" target="_blank">Open</a>
+        </div>
     </div>
 
     <div class="tool">
-        <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png">
-        <h3>Text to Speech</h3>
-        <a href="#">Open</a>
+        <img src="https://images.unsplash.com/photo-1581090700227-1e37b190418e">
+        <div class="content">
+            <h3>Grammarly</h3>
+            <p>Improve grammar and writing quality.</p>
+            <a href="https://www.grammarly.com" target="_blank">Open</a>
+        </div>
     </div>
 
     <div class="tool">
-        <img src="https://cdn-icons-png.flaticon.com/512/1034/1034150.png">
-        <h3>Speech to Text</h3>
-        <a href="#">Open</a>
+        <img src="https://images.unsplash.com/photo-1607082349566-187342175e2f">
+        <div class="content">
+            <h3>Remove.bg</h3>
+            <p>Remove image background automatically.</p>
+            <a href="https://www.remove.bg" target="_blank">Open</a>
+        </div>
     </div>
 
     <div class="tool">
-        <img src="https://cdn-icons-png.flaticon.com/512/1006/1006771.png">
-        <h3>AI Writer</h3>
-        <a href="#">Open</a>
+        <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d">
+        <div class="content">
+            <h3>Copy.ai</h3>
+            <p>AI copywriting for ads and blogs.</p>
+            <a href="https://www.copy.ai" target="_blank">Open</a>
+        </div>
     </div>
 
     <div class="tool">
-        <img src="https://cdn-icons-png.flaticon.com/512/1829/1829586.png">
-        <h3>AI Translator</h3>
-        <a href="#">Open</a>
+        <img src="https://images.unsplash.com/photo-1526378722484-bd91ca387e72">
+        <div class="content">
+            <h3>QuillBot</h3>
+            <p>Rewrite and paraphrase content.</p>
+            <a href="https://quillbot.com" target="_blank">Open</a>
+        </div>
     </div>
 
     <div class="tool">
-        <img src="https://cdn-icons-png.flaticon.com/512/919/919836.png">
-        <h3>Code Assistant</h3>
-        <a href="#">Open</a>
+        <img src="https://images.unsplash.com/photo-1617791160588-241658c0f566">
+        <div class="content">
+            <h3>Pictory</h3>
+            <p>Convert text into AI videos.</p>
+            <a href="https://pictory.ai" target="_blank">Open</a>
+        </div>
     </div>
 
     <div class="tool">
-        <img src="https://cdn-icons-png.flaticon.com/512/3595/3595455.png">
-        <h3>AI Resume</h3>
-        <a href="#">Open</a>
+        <img src="https://images.unsplash.com/photo-1633419461186-7d40a38105ec">
+        <div class="content">
+            <h3>Leonardo AI</h3>
+            <p>Create stunning AI artwork.</p>
+            <a href="https://leonardo.ai" target="_blank">Open</a>
+        </div>
     </div>
 
     <div class="tool">
-        <img src="https://cdn-icons-png.flaticon.com/512/4320/4320337.png">
-        <h3>AI Video</h3>
-        <a href="#">Open</a>
+        <img src="https://images.unsplash.com/photo-1591696331111-ef9586a5b17a">
+        <div class="content">
+            <h3>Midjourney</h3>
+            <p>Generate AI images via prompts.</p>
+            <a href="https://www.midjourney.com" target="_blank">Open</a>
+        </div>
     </div>
 
     <div class="tool">
-        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
-        <h3>AI Voice</h3>
-        <a href="#">Open</a>
+        <img src="https://images.unsplash.com/photo-1618401471353-b98afee0b2eb">
+        <div class="content">
+            <h3>Notion AI</h3>
+            <p>AI-powered notes and productivity.</p>
+            <a href="https://www.notion.so/product/ai" target="_blank">Open</a>
+        </div>
     </div>
 
 </div>
 
 <footer>
-    © Daily AI Tools
+    © 2026 Daily AI Tools
 </footer>
 
 </body>
