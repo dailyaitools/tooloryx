@@ -6,8 +6,8 @@
 <title>Daily AI Tools</title>
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,Arial,sans-serif}
-body{background:#f5f7fb;color:#111}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,Arial}
+body{background:#f4f7fb;color:#111}
 
 /* HEADER */
 header{
@@ -28,7 +28,7 @@ border-radius:40px;
 border:none;
 outline:none;
 font-size:16px;
-box-shadow:0 8px 25px rgba(0,0,0,.2)
+box-shadow:0 8px 25px rgba(0,0,0,.25)
 }
 
 /* GRID */
@@ -45,21 +45,18 @@ gap:30px
 .card{
 background:#fff;
 border-radius:22px;
-padding:30px 20px;
+padding:28px 20px;
 text-align:center;
 text-decoration:none;
 color:#111;
 box-shadow:0 12px 30px rgba(0,0,0,.08);
-transition:.35s ease
+transition:.35s
 }
 .card:hover{
-transform:translateY(-10px) scale(1.02);
+transform:translateY(-10px);
 box-shadow:0 30px 60px rgba(0,0,0,.15)
 }
-.icon{
-font-size:46px;
-margin-bottom:15px
-}
+.icon{font-size:46px;margin-bottom:15px}
 .card h3{font-size:20px;margin-bottom:6px}
 .card p{font-size:14px;color:#555}
 
@@ -78,74 +75,56 @@ font-size:14px
 
 <header>
 <h1>Daily AI Tools</h1>
-<p>All powerful AI tools in one trusted place</p>
+<p>100+ powerful AI tools in one trusted place</p>
 
 <div class="search-box">
 <input type="text" id="search" placeholder="Search AI tools..." onkeyup="filterTools()">
 </div>
 </header>
 
-<div class="container" id="toolList">
-
-<a class="card" href="https://chat.openai.com" target="_blank">
-<div class="icon">🤖</div>
-<h3>ChatGPT</h3>
-<p>AI chatbot for writing, coding and learning.</p>
-</a>
-
-<a class="card" href="https://www.canva.com" target="_blank">
-<div class="icon">🎨</div>
-<h3>Canva AI</h3>
-<p>Create designs, posts and presentations.</p>
-</a>
-
-<a class="card" href="https://www.grammarly.com" target="_blank">
-<div class="icon">✍️</div>
-<h3>Grammarly</h3>
-<p>Improve grammar and writing quality.</p>
-</a>
-
-<a class="card" href="https://www.remove.bg" target="_blank">
-<div class="icon">🖼️</div>
-<h3>Remove.bg</h3>
-<p>Remove image background automatically.</p>
-</a>
-
-<a class="card" href="https://www.copy.ai" target="_blank">
-<div class="icon">📝</div>
-<h3>Copy.ai</h3>
-<p>AI copywriting for ads and blogs.</p>
-</a>
-
-<a class="card" href="https://quillbot.com" target="_blank">
-<div class="icon">🔁</div>
-<h3>QuillBot</h3>
-<p>Rewrite and paraphrase content.</p>
-</a>
-
-<a class="card" href="https://pictory.ai" target="_blank">
-<div class="icon">🎬</div>
-<h3>Pictory</h3>
-<p>Convert text into AI videos.</p>
-</a>
-
-<a class="card" href="https://leonardo.ai" target="_blank">
-<div class="icon">🧠</div>
-<h3>Leonardo AI</h3>
-<p>Create stunning AI artwork.</p>
-</a>
-
-</div>
+<div class="container" id="toolList"></div>
 
 <footer>
 © 2026 Daily AI Tools — Built for productivity
 </footer>
 
 <script>
+// 🔥 AI TOOLS DATA (ADD UNLIMITED)
+const tools = [
+{ name:"ChatGPT", desc:"AI chatbot for writing & coding", link:"https://chat.openai.com", icon:"🤖" },
+{ name:"Canva AI", desc:"Design posts & presentations", link:"https://www.canva.com", icon:"🎨" },
+{ name:"Grammarly", desc:"Improve grammar & writing", link:"https://www.grammarly.com", icon:"✍️" },
+{ name:"Remove.bg", desc:"Remove image background", link:"https://www.remove.bg", icon:"🖼️" },
+{ name:"Copy.ai", desc:"AI copywriting tool", link:"https://www.copy.ai", icon:"📝" },
+{ name:"QuillBot", desc:"Paraphrase & rewrite text", link:"https://quillbot.com", icon:"🔁" },
+{ name:"Pictory", desc:"Text to AI video", link:"https://pictory.ai", icon:"🎬" },
+{ name:"Leonardo AI", desc:"AI artwork generator", link:"https://leonardo.ai", icon:"🧠" },
+
+/* 🔽 YAHAN SE 100+ ADD KARTE JAO 🔽 */
+{ name:"Jasper", desc:"AI content generator", link:"https://www.jasper.ai", icon:"⚡" },
+{ name:"Midjourney", desc:"AI image generation", link:"https://www.midjourney.com", icon:"🖌️" },
+{ name:"Runway", desc:"AI video editing", link:"https://runwayml.com", icon:"🎥" },
+{ name:"Synthesia", desc:"AI avatar videos", link:"https://www.synthesia.io", icon:"👤" },
+{ name:"Notion AI", desc:"AI notes & productivity", link:"https://www.notion.so", icon:"📘" }
+];
+
+// AUTO GENERATE CARDS
+const toolList = document.getElementById("toolList");
+
+tools.forEach(tool=>{
+toolList.innerHTML += `
+<a class="card" href="${tool.link}" target="_blank">
+<div class="icon">${tool.icon}</div>
+<h3>${tool.name}</h3>
+<p>${tool.desc}</p>
+</a>
+`;
+});
+
+// SEARCH
 function filterTools(){
 let input=document.getElementById("search").value.toLowerCase();
-let cards=document.querySelectorAll(".card");
-cards.forEach(card=>{
+document.querySelectorAll(".card").forEach(card=>{
 card.style.display=card.innerText.toLowerCase().includes(input)?"block":"none";
 });
 }
