@@ -1,70 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Tooloryx – Discover Smart AI Tools</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<title>Tooloryx – AI Tools Directory</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+}
+html{
+  scroll-behavior:smooth;
+}
+body{
+  background:#f7f7fb;
+  color:#222;
+}
+
+/* HEADER */
+header{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:70px;
+  background:#ffffff;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 40px;
+  box-shadow:0 2px 15px rgba(0,0,0,0.08);
+  z-index:99999;
+}
+header h1{
+  font-size:22px;
+  color:#ff4d7d;
+}
+header nav a{
+  margin-left:25px;
+  text-decoration:none;
+  font-weight:600;
+  color:#333;
+  cursor:pointer;
+}
+header nav a:hover{
+  color:#ff4d7d;
+}
+
+/* SECTIONS */
+section{
+  padding:120px 40px;
+  text-align:center;
+}
+#home{
+  background:#ffffff;
+}
+#home h2{
+  font-size:40px;
+  margin-bottom:15px;
+}
+#home p{
+  color:#666;
+  margin-bottom:30px;
+}
+#home input{
+  padding:14px 20px;
+  width:320px;
+  border-radius:30px;
+  border:1px solid #ddd;
+  outline:none;
+}
+
+/* TOOLS */
+.tools{
+  display:flex;
+  gap:30px;
+  justify-content:center;
+  flex-wrap:wrap;
+  margin-top:40px;
+}
+.card{
+  background:#fff;
+  width:280px;
+  padding:30px;
+  border-radius:16px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+.card h3{
+  margin-bottom:10px;
+}
+.card p{
+  color:#666;
+  margin-bottom:20px;
+}
+.card a{
+  display:inline-block;
+  padding:10px 22px;
+  background:#ff4d7d;
+  color:#fff;
+  border-radius:20px;
+  text-decoration:none;
+}
+.card a:hover{
+  opacity:0.9;
+}
+
+/* LIGHT SECTION */
+.light{
+  background:#f0f0f5;
+}
+
+/* FOOTER */
+footer{
+  background:#ffffff;
+  text-align:center;
+  padding:30px;
+  color:#777;
+}
+</style>
 </head>
 
 <body>
 
-<!-- ===== HEADER ===== -->
-<header class="navbar">
-  <div class="logo">Tooloryx</div>
+<header>
+  <h1>Tooloryx</h1>
   <nav>
     <a href="#home">Home</a>
-    <a href="#categories">Categories</a>
-    <a href="#submit">Submit Tool</a>
+    <a href="#tools">Tools</a>
+    <a href="#submit">Submit</a>
     <a href="#about">About</a>
   </nav>
 </header>
 
-<!-- ===== HOME ===== -->
-<section id="home" class="hero">
-  <h1>Discover the Latest AI Tools</h1>
-  <p>Explore handpicked AI tools to boost your productivity</p>
-  <input type="text" id="search" placeholder="Search AI tools..." />
+<section id="home">
+  <h2>Discover the Best AI Tools</h2>
+  <p>Handpicked AI tools to boost your productivity</p>
+  <input type="text" placeholder="Search AI tools...">
 </section>
 
-<!-- ===== CATEGORIES ===== -->
-<section id="categories" class="section">
-  <h2>Popular AI Tools</h2>
-
+<section id="tools">
+  <h2>Popular Tools</h2>
   <div class="tools">
     <div class="card">
       <h3>ChatGPT</h3>
       <p>AI assistant for writing & coding</p>
-      <a href="https://chat.openai.com" target="_blank">Visit Tool</a>
+      <a href="https://chat.openai.com" target="_blank">Visit</a>
     </div>
-
     <div class="card">
       <h3>Midjourney</h3>
       <p>AI image generation platform</p>
-      <a href="https://www.midjourney.com" target="_blank">Visit Tool</a>
+      <a href="https://www.midjourney.com" target="_blank">Visit</a>
     </div>
-
     <div class="card">
       <h3>Notion AI</h3>
-      <p>Smart workspace with AI features</p>
-      <a href="https://www.notion.so" target="_blank">Visit Tool</a>
+      <p>Smart AI workspace</p>
+      <a href="https://www.notion.so" target="_blank">Visit</a>
     </div>
   </div>
 </section>
 
-<!-- ===== SUBMIT ===== -->
-<section id="submit" class="section light">
+<section id="submit" class="light">
   <h2>Submit Your Tool</h2>
   <p>Email us your AI tool details</p>
   <b>submit@tooloryx.com</b>
 </section>
 
-<!-- ===== ABOUT ===== -->
-<section id="about" class="section">
+<section id="about">
   <h2>About Tooloryx</h2>
   <p>
-    Tooloryx is a curated directory of the best AI tools for creators,
-    developers and businesses.
+    Tooloryx is a curated directory of the best AI tools
+    for creators, developers, and businesses.
   </p>
 </section>
 
